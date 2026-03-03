@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    position: relative;
+    z-index: 1;
+}
+
+/* Blurred Background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/background.png") no-repeat center center/cover;
+    filter: blur(6px);
+    z-index: -1;
+    transform: scale(1.05);
+}
+
+/* Header */
+header {
+    background-color: rgba(47, 111, 62, 0.9);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    color: #222;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #2f6f3e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.feature-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Products */
+.products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.product-card {
+    background: white;
+    padding: 30px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+.product-card button {
+    padding: 12px 20px;
+    background-color: #2f6f3e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* About */
+.about {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.about img {
+    width: 350px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(47, 111, 62, 0.9);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
